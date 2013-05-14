@@ -1,0 +1,12 @@
+; AresSupernode.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AresSupernode"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

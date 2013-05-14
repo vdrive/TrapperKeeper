@@ -1,0 +1,226 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\AresProtector.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AresProtector.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "AresProtector.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ARESDIALOG DIALOGEX 0, 0, 707, 451
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ares Protection"
+FONT 9, "Fixedsys", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_HEXVIEW,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,319,257,381,191
+    CONTROL         "",IDC_ULTRAPEERS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,4,107,272,110
+    CONTROL         "",IDC_DECOY_UPLOADS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,285,96,211,121
+    GROUPBOX        "ACTIVE ULTRAPEERS",IDC_STATIC,1,85,278,134
+    GROUPBOX        "Uploading Decoys/Swarms",IDC_STATIC,282,85,217,134
+    GROUPBOX        "Send/Receive Event Viewer",IDC_STATIC,1,234,303,216
+    RTEXT           "Known Hosts:",IDC_STATIC,7,54,92,8
+    CONTROL         "",IDC_PROJECTINFO,"SysTreeView32",TVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,506,96,189,118
+    GROUPBOX        "Project/File Info",IDC_STATIC,502,85,198,134
+    RTEXT           "Connected Hosts:",IDC_STATIC,7,63,92,8
+    GROUPBOX        "Event Data Hex Viewer",IDC_STATIC,316,234,387,216
+    RTEXT           "Connected Peers:",IDC_STATIC,281,57,67,8
+    CONTROL         "Decrypted",IDC_DECRYPTED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,320,246,62,8
+    RTEXT           "Ares CPU Load:",IDC_STATIC,479,21,115,8
+    RTEXT           "System Receive Bytes/Sec:",IDC_STATIC,479,30,115,8
+    RTEXT           "System Send Bytes/Sec:",IDC_STATIC,479,39,115,8
+    RTEXT           "Total CPU Load:",IDC_STATIC,479,12,115,8
+    CONTROL         "",IDC_EVENTLIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,269,294,178
+    PUSHBUTTON      "Dump To File",IDC_DUMPTOFILE,399,243,88,13
+    LTEXT           "Event Cache Time:",IDC_STATIC,7,256,68,8
+    LTEXT           "Minutes",IDC_STATIC,264,256,31,9
+    LTEXT           "N/A",IDC_EVENTTIMETEXT,245,256,15,8
+    CONTROL         "",IDC_EVENTTIMESLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,79,257,160,10
+    LTEXT           "N/A",IDC_KNOWNULTRAPEERS,105,54,49,8
+    LTEXT           "N/A",IDC_CONNECTEDULTRAPEERS,105,63,49,8
+    LTEXT           "N/A",IDC_TOTALCPU,599,12,98,8
+    LTEXT           "N/A",IDC_ARESCPU,599,21,98,8
+    LTEXT           "N/A",IDC_RECEIVEBANDWIDTH,599,30,98,8
+    LTEXT           "N/A",IDC_SENDBANDWIDTH,599,39,98,8
+    RTEXT           "System Status:",IDC_STATIC,7,5,65,8
+    LTEXT           "Initializing...",IDC_SYSTEMSTATUS,75,5,191,8
+    RTEXT           "System Memory Usage:",IDC_STATIC,479,48,115,8
+    RTEXT           "Trapper Keeper Memory Usage:",IDC_STATIC,479,57,115,8
+    LTEXT           "N/A",IDC_SYSTEMMEMORYUSAGE,599,48,98,8
+    LTEXT           "N/A",IDC_TRAPPERKEEPERMEMORYUSAGE,599,57,98,8
+    GROUPBOX        "System Status",IDC_STATIC,474,2,226,76
+    CONTROL         "Record Events",IDC_RECORDEVENTS,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,7,245,68,8
+    PUSHBUTTON      "Purge Dead Connections Now",IDC_PURGEDEADCONNECTIONSNOW,
+                    160,92,114,14
+    RTEXT           "Hosts With Files:",IDC_STATIC,7,71,92,8
+    LTEXT           "N/A",IDC_ULTRAPEERSWITHFILES,105,71,49,8
+    RTEXT           "Decoys Loaded:",IDC_STATIC,7,16,65,8
+    LTEXT           "N/A",IDC_SPOOFSLOADED,75,16,49,8
+    LTEXT           "N/A",IDC_FILETRANSFERPEERCOUNT,354,57,97,8
+    RTEXT           "FT Send Rate:",IDC_STATIC,281,65,67,8
+    LTEXT           "N/A",IDC_SENDQUEUESIZE,354,65,97,8
+    RTEXT           "Interdiction Targets:",IDC_STATIC,281,2,92,8
+    LTEXT           "N/A",IDC_INTERDICTIONTARGETCOUNT,376,2,85,8
+    RTEXT           "Interdiction Transfer:",IDC_STATIC,281,10,92,8
+    LTEXT           "N/A",IDC_INTERDICTIONTRANSFER,376,10,92,8
+    RTEXT           "Interdiction Connections:",IDC_STATIC,272,18,101,8
+    LTEXT           "N/A",IDC_INTERDICTIONCONNECTIONCOUNT,376,18,92,8
+    RTEXT           "Interdiction Cons W/ Trans:",IDC_STATIC,263,26,110,8
+    LTEXT           "N/A",IDC_INTERDICTIONCONNECTIONTRANSFERCOUNT,376,26,92,
+                    8
+    RTEXT           "Banned Client Ratio:",IDC_STATIC,263,34,110,8
+    LTEXT           "N/A",IDC_INTERDICTIONBANNEDCLIENTRATIO,376,34,92,8
+    RTEXT           "Interdiction Queue Size:",IDC_STATIC,263,41,110,8
+    LTEXT           "N/A",IDC_INTERDICTIONQUEUESIZE,376,41,92,8
+    RTEXT           "Hash Cache Efficiency:",IDC_STATIC,254,74,94,8
+    LTEXT           "N/A",IDC_HASH_CACHE_EFFICIENCY,354,74,97,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ARESDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 700
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 444
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\AresProtector.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
