@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTTrackerChecker", "BTTrackerChecker.vcproj", "{D2EC1FAD-2741-4833-805D-95403B063004}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D2EC1FAD-2741-4833-805D-95403B063004}.Debug.ActiveCfg = Debug|Win32
+		{D2EC1FAD-2741-4833-805D-95403B063004}.Debug.Build.0 = Debug|Win32
+		{D2EC1FAD-2741-4833-805D-95403B063004}.Release.ActiveCfg = Release|Win32
+		{D2EC1FAD-2741-4833-805D-95403B063004}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

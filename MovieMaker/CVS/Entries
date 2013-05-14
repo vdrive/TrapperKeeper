@@ -1,0 +1,27 @@
+/DllInterface.cpp/1.4/Sun Mar 23 10:06:47 2003//
+/DllInterface.h/1.2/Tue Mar 11 19:58:11 2003//
+/MovieInfo.cpp/1.2/Fri Mar  7 01:09:00 2003//
+/MovieInfo.h/1.2/Fri Mar  7 01:09:02 2003//
+/MovieMaker.cpp/1.1/Tue Mar  4 01:46:52 2003//
+/MovieMaker.def/1.1/Tue Mar  4 02:19:12 2003//
+/MovieMaker.rc/1.1/Tue Mar  4 01:46:52 2003//
+/MovieMaker.vcproj/1.6/Sun Mar 23 10:06:47 2003//
+/MovieMakerDlg.cpp/1.1/Tue Mar  4 01:46:52 2003//
+/MovieMakerDlg.h/1.1/Tue Mar  4 01:46:52 2003//
+/MovieMakerModule.cpp/1.4/Sat Mar  8 01:23:21 2003//
+/MovieMakerModule.h/1.4/Mon Mar 10 19:29:20 2003//
+/ReadMe.txt/1.1/Tue Mar  4 01:46:52 2003//
+/Record.cpp/1.2/Fri Mar  7 01:09:08 2003//
+/Record.h/1.2/Fri Mar  7 01:09:10 2003//
+/RecordHeader.cpp/1.2/Fri Mar  7 01:09:12 2003//
+/RecordHeader.h/1.2/Fri Mar  7 01:09:14 2003//
+/Resource.h/1.1/Tue Mar  4 01:46:52 2003//
+/data1024.dbb/1.1/Tue Mar  4 01:46:52 2003//
+/data256.dbb/1.1/Tue Mar  4 01:46:52 2003//
+/giFThash.cpp/1.2/Fri Mar 14 01:34:39 2003//
+/giFThash.h/1.1/Tue Mar  4 01:46:52 2003//
+/giFTmd5.cpp/1.1/Tue Mar  4 01:46:52 2003//
+/giFTmd5.h/1.1/Tue Mar  4 01:46:52 2003//
+/stdafx.cpp/1.1/Tue Mar  4 01:46:52 2003//
+/stdafx.h/1.1/Tue Mar  4 01:46:52 2003//
+D

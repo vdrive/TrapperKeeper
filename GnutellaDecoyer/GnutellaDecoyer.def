@@ -1,0 +1,12 @@
+; GnutellaDecoyer.def : Declares the module parameters for the DLL.
+
+LIBRARY      "GnutellaDecoyer"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

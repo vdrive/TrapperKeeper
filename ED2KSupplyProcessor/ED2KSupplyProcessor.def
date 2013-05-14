@@ -1,0 +1,12 @@
+; ED2KSupplyProcessor.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ED2KSupplyProcessor"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

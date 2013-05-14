@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTInterdictor", "BTInterdictor\BTInterdictor.vcproj", "{F959A50F-3C8E-45B0-97C2-A4A7F6980AE5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F959A50F-3C8E-45B0-97C2-A4A7F6980AE5}.Debug.ActiveCfg = Debug|Win32
+		{F959A50F-3C8E-45B0-97C2-A4A7F6980AE5}.Debug.Build.0 = Debug|Win32
+		{F959A50F-3C8E-45B0-97C2-A4A7F6980AE5}.Release.ActiveCfg = Release|Win32
+		{F959A50F-3C8E-45B0-97C2-A4A7F6980AE5}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

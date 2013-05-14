@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DCMaster.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DCMaster.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "DCMaster.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DC_MASTER_DIALOG DIALOGEX 0, 0, 650, 445
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "DC Master"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_COLLECTOR_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,6,7,637,350
+    PUSHBUTTON      "Reset",IDC_RESET_BUTTON,584,405,59,14
+    LTEXT           "Total Projects: 0",IDC_TOTAL_PROJECTS_STATIC,6,359,78,8
+    LTEXT           "Active Projects: 0",IDC_ACTIVE_PROJECTS_STATIC,6,369,81,
+                    8
+    LTEXT           "Gift DC Projects: 0",IDC_GIFT_DC_PROJECTS_STATIC,6,387,
+                    97,8
+    LTEXT           "Gift Spoofing Projects: 0",
+                    IDC_GIFT_SPOOFING_PROJECTS_STATIC,6,398,109,8
+    LTEXT           "Gift Swarming Projects: 0",
+                    IDC_GIFT_SWARMING_PROJECTS_STATIC,6,409,109,8
+    PUSHBUTTON      "Browse Projects",IDC_BROWSE_PROJECTS_BUTTON,524,405,59,
+                    14
+    LTEXT           "Gnutella Protection Projects: 0",
+                    IDC_GNUTELLA_PROTECTION_PROJECTS_STATIC,116,358,133,8
+    LTEXT           "00",IDC_Load_Balancing_Divider_Static,495,390,9,8
+    CONTROL         "",IDC_Load_Balancing_Divider_Spin,"msctls_updown32",
+                    UDS_ARROWKEYS,509,387,11,14
+    LTEXT           "00",IDC_Singles_Load_Balancing_Divider_Static,495,407,9,
+                    8
+    CONTROL         "",IDC_Singles_Load_Balancing_Spin,"msctls_updown32",
+                    UDS_ARROWKEYS,509,405,11,14
+    LTEXT           "Gnutella Load Balancing Divider:",
+                    IDC_Gnutella_Load_Balancing_Divider_STATIC,385,390,103,8
+    LTEXT           "Gnutella Singles Load Balancing Divider:",
+                    IDC_Gnutella_Singles_Load_Balancing_Divider_STATIC,361,
+                    407,127,8
+    PUSHBUTTON      "Reset Splitted Gnutella Projects",
+                    IDC_RESET_SPLITTED_GNUTELLA_BUTTON,524,388,119,14
+    LTEXT           "Singles Projects: 0",IDC_Singles_Projects_STATIC,116,
+                    367,97,8
+    LTEXT           "WinMX Spoofing Projects: 0",
+                    IDC_WINMX_SPOOFING_PROJECTS_STATIC,116,376,125,8
+    LTEXT           "WinMX Swarming Projects: 0",
+                    IDC_WINMX_SWARMING_PROJECTS_STATIC,116,385,124,8
+    PUSHBUTTON      "Reset WinMX Spoofers",IDC_RESET_WINMX_SPOOFER_BUTTON,
+                    525,358,118,14
+    PUSHBUTTON      "Reset Gift Swarmers",IDC_RESET_GIFT_SWARMER_BUTTON,403,
+                    372,118,14
+    PUSHBUTTON      "Reset WinMX Swarmers",IDC_RESET_WINMX_SWARMER_BUTTON,
+                    525,373,118,14
+    PUSHBUTTON      "Reset Gift Spoofers",IDC_RESET_GIFT_SPOOFER_BUTTON,403,
+                    358,118,14
+    LTEXT           "Piolet Spoofer Balancing Divider:",
+                    IDC_PIOLET_DIVIDER_STATIC,262,362,104,8
+    LTEXT           "00",IDC_Piolet_Load_Balancing_Divider_Static,368,362,9,
+                    8
+    CONTROL         "",IDC_Piolet_Load_Balancing_Divider_Spin,
+                    "msctls_updown32",UDS_ARROWKEYS,382,359,11,14
+    PUSHBUTTON      "Reset Splitted Piolet Projects",
+                    IDC_RESET_SPLITTED_PIOLET_BUTTON,281,374,119,14
+    LTEXT           "BearShare Spoofer Balancing Divider:",
+                    IDC_BEARSHARE_DIVIDER_STATIC,367,426,120,8
+    LTEXT           "00",IDC_BearShare_Load_Balancing_Divider_Static,495,426,
+                    9,8
+    CONTROL         "",IDC_BearShare_Load_Balancing_Divider_Spin,
+                    "msctls_updown32",UDS_ARROWKEYS,509,423,11,14
+    PUSHBUTTON      "Reset BearShare Projects",IDC_RESET_BEARSHARE_BUTTON,
+                    524,421,119,14
+    LTEXT           "BearShare Projects: 0",IDC_BearShare_Projects_STATIC,6,
+                    420,97,8
+    LTEXT           "00",IDC_GiftSwarmer_Load_Balancing_Divider_Static,315,
+                    428,9,8
+    CONTROL         "",IDC_Gift_Swarmer_Load_Balancing_Divider_Spin,
+                    "msctls_updown32",UDS_ARROWKEYS,329,425,11,14
+    LTEXT           "Gift Swarmer Load Balancing Divider:",
+                    IDC_Gift_Swarmer_Load_Balancing_Divider_STATIC,189,428,
+                    118,8
+    LTEXT           "00",IDC_GiftSpoofer_Load_Balancing_Divider_Static,315,
+                    407,9,8
+    CONTROL         "",IDC_Gift_Spoofer_Load_Balancing_Divider_Spin,
+                    "msctls_updown32",UDS_ARROWKEYS,329,404,11,14
+    LTEXT           "Gift Spoofer Load Balancing Divider:",
+                    IDC_Gift_Spoofer_Load_Balancing_Divider_STATIC,192,407,
+                    116,8
+END
+
+IDD_BROWSE_PROJECTS_DIALOG DIALOGEX 0, 0, 386, 427
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Browse Projects"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROJECT_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    WS_BORDER | WS_TABSTOP,7,7,372,413
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DC_MASTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 643
+        TOPMARGIN, 7
+    END
+
+    IDD_BROWSE_PROJECTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 420
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DCMaster.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

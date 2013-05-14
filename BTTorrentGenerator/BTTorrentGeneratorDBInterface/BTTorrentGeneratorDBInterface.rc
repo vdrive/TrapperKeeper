@@ -1,0 +1,416 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\BTTorrentGeneratorDBInterface.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD_DECOY_DLG DIALOGEX 0, 0, 446, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Torrent Filename:",IDC_TORRENT_FILENAME_STATIC,7,9,58,8
+    LTEXT           "Torrent Total Filesize:",IDC_TORRENT_FILESIZE_STATIC,7,
+                    27,70,8
+    LTEXT           "Torrent Contents:",IDC_TORRENT_FILE_CONTENTS_STATIC,7,
+                    44,59,8
+    LTEXT           "Item Filename:",IDC_ITEM_FILENAME_STATIC,80,152,48,8
+    PUSHBUTTON      "Commit Data",IDC_COMMIT_BUTTON,159,284,61,14
+    PUSHBUTTON      "Clear Form",IDC_CLEAR_BUTTON,225,284,61,14
+    EDITTEXT        IDC_TORRENT_FILENAME_EDIT,80,7,359,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEM_FILESIZE_EDIT,134,167,64,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT
+    EDITTEXT        IDC_ITEM_FILENAME_EDIT,134,150,305,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TORRENT_FILE_CONTENTS_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SORTASCENDING | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,52,432,95
+    PUSHBUTTON      "Add",IDC_ADD_ITEM_BUTTON,7,150,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE_ITEM_BUTTON,7,167,50,14
+    LTEXT           "Item Filesize:",IDC_ITEM_FILESIZE_STATIC,80,169,43,8
+    LTEXT           "0",IDC_TORRENT_FILESIZE_NUM_STATIC,80,27,66,8
+    CONTROL         "Multifile Torrent Base Directory:",
+                    IDC_MULTIFILE_TORRENT_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,184,118,10
+    EDITTEXT        IDC_BASE_DIRECTORY_EDIT,134,183,305,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Auto Decoy Size Adjust",IDC_AUTO_SIZE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,348,25,91,10
+    LTEXT           "Tracker:",IDC_TRACKER_STATIC,80,218,28,8
+    COMBOBOX        IDC_TRACKER_COMBO,134,215,253,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Seeds (Base / Growth Multipler):",IDC_SEEDS_STATIC,80,
+                    234,104,8
+    LTEXT           "Peers (Base / Growth Multiplier):",IDC_PEERS_STATIC,80,
+                    250,104,8
+    LTEXT           "Complete (Base / Growth Multiplier):",
+                    IDC_COMPLETE_STATIC,80,268,116,8
+    EDITTEXT        IDC_SEED_BASE_EDIT,198,232,54,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_SEED_MULTIPLIER_EDIT,256,232,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_PEER_BASE_EDIT,198,249,54,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_PEER_MULTIPLIER_EDIT5,256,249,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_COMPLETE_BASE_EDIT,198,266,54,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_COMPLETE_MULTIPLIER_EDIT,256,266,53,14,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FORCED_TRACKER_EDIT,134,199,305,14,ES_AUTOHSCROLL
+    CONTROL         "Force Primary Tracker:",IDC_FORCE_PRIMARY_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,46,200,88,10
+    LTEXT           "0",IDC_ITEM_FILESIZE_NUM_STATIC,219,169,90,8
+    LTEXT           "(Maximum Available:",
+                    IDC_TORRENT_FILESIZE_REMAINING_STATIC,149,27,70,8
+    LTEXT           "4,294,967,295)",
+                    IDC_TORRENT_FILESIZE_REMAINING_NUM_STATIC,219,27,66,8
+    PUSHBUTTON      "Refresh",IDC_REFRESH_TRACKERS_BUTTON,389,215,50,12
+END
+
+IDD_MAINFRAME_DLG DIALOGEX 0, 0, 460, 334
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "BitTorrent Interface v.14"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_MAINFRAME_TAB,"SysTabControl32",0x0,7,7,446,320
+END
+
+IDD_ADD_CROSSNAME_DLG DIALOGEX 0, 0, 446, 305
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,432,238
+    PUSHBUTTON      "OK",IDC_GENERATE_BUTTON,389,284,50,14
+    EDITTEXT        IDC_OUTFILE_EDIT,54,266,385,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFILE_EDIT,54,248,385,14,ES_AUTOHSCROLL
+    LTEXT           "Source:",IDC_INFILE_STATIC,7,251,26,8
+    LTEXT           "Destination:",IDC_OUTFILE_STATIC,7,269,38,8
+    CONTROL         "Generate Cross-name",IDC_CROSSNAME_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,7,288,84,10
+    CONTROL         "Only add hash",IDC_ADDHASH_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,102,288,61,10
+END
+
+IDD_MODIFY_STATS_DLG DIALOGEX 0, 0, 446, 305
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TORRENT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,7,432,168
+    EDITTEXT        IDC_BASE_SEEDS_EDIT,58,208,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_BASE_PEERS_EDIT,153,208,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_BASE_COMPLETES_EDIT,264,208,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_SEED_MULTIPLIER_EDIT,58,224,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_PEERS_MULTIPLIER_EDIT,153,223,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_COMPLETE_MULTIPLIER_EDIT,264,223,40,14,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ACTIVE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,428,208,16,8
+    CONTROL         "",IDC_GENERATE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,428,219,16,8
+    CONTROL         "",IDC_INFLATE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,428,230,16,8
+    EDITTEXT        IDC_COMMENT_EDIT,41,241,398,14,ES_AUTOHSCROLL
+    LTEXT           "Length: 0",IDC_LENGTH_STATIC,256,192,95,8
+    LTEXT           "Hash: <NONE>",IDC_HASH_STATIC,7,192,249,8
+    LTEXT           "Comment:",IDC_COMMENT_STATIC,7,244,32,8
+    LTEXT           "Name: <NONE>",IDC_FILENAME_STATIC,7,178,432,8,
+                    SS_ENDELLIPSIS
+    LTEXT           "Base Seeds:",IDC_BASE_SEEDS_STATIC,7,211,41,8
+    LTEXT           "Seed Multiplier:",IDC_SEED_MULTIPLIER_STATIC,7,226,49,8
+    LTEXT           "Base Peers:",IDC_BASE_PEERS_STATIC,104,211,39,8
+    LTEXT           "Peer Multiplier:",IDC_PEERS_MULTIPLIER_STATIC,104,226,
+                    46,8
+    LTEXT           "Complete Multiplier:",IDC_COMPLETE_MULTIPLIER_STATIC,
+                    198,226,62,8
+    LTEXT           "Base Completes:",IDC_BASE_COMPLETES_STATIC,198,211,54,8
+    PUSHBUTTON      "Edit",IDC_EDIT_BUTTON,281,284,50,14
+    PUSHBUTTON      "Commit",IDC_COMMIT_BUTTON,335,284,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDC_CANCEL_BUTTON,389,284,50,14,WS_DISABLED
+    LTEXT           "Active",IDC_ACTIVE_STATIC,400,207,21,8
+    LTEXT           "Generate",IDC_GENERATE_STATIC,391,219,30,8
+    LTEXT           "Inflate",IDC_INFLATE_STATIC,401,230,20,8
+    LTEXT           "Creation Date: <NONE>",IDC_CREATION_STATIC,7,260,146,8
+    LTEXT           "Activation Date: <NONE>",IDC_ACTIVATION_STATIC,153,260,
+                    146,8
+    LTEXT           "",IDC_MODIFY_STATS_STATUS_STATIC,7,287,257,8
+END
+
+IDD_HASH_IDENTIFIER_DLG DIALOGEX 0, 0, 446, 305
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Check Torrents",IDC_CHECK_TORRENTS_BUTTON,367,269,72,14
+    CONTROL         "",IDC_DIRECTORY_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,432,217
+    CONTROL         "",IDC_CHECKING_PROGRESS,"msctls_progress32",WS_BORDER | 
+                    0x1,7,236,432,14
+    LTEXT           "Real Torrents:",IDC_REAL_STATIC,7,254,74,8
+    LTEXT           "0",IDC_REAL_NUM_STATIC,81,254,98,8
+    LTEXT           "Decoy Torrents:",IDC_DECOY_STATIC,7,266,74,8
+    LTEXT           "0",IDC_DECOY_NUM_STATIC,81,266,98,8
+    LTEXT           "",IDC_CURRENT_FILE_STATIC,7,226,432,8
+    LTEXT           "Inflated Torrent:",IDC_INFLATION_STATIC,7,278,74,8
+    LTEXT           "Crossnamed Torrent:",IDC_CROSSNAME_STATIC,7,290,74,8
+    LTEXT           "0",IDC_INFLATION_NUM_STATIC,81,278,98,8
+    LTEXT           "0",IDC_CROSSNAME_NUM_STATIC,81,290,98,8
+END
+
+IDD_MODIFY_TRACKER_DLG DIALOGEX 0, 0, 446, 305
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TRACKERS_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,432,258
+    EDITTEXT        IDC_TRACKER_EDIT,35,267,404,14,ES_AUTOHSCROLL
+    CONTROL         "URL",IDC_URL_RADIO,"Button",BS_AUTORADIOBUTTON,35,286,
+                    31,10
+    CONTROL         "IP",IDC_IP_RADIO,"Button",BS_AUTORADIOBUTTON,70,286,23,
+                    10
+    PUSHBUTTON      "Add Tracker",IDC_ADD_TRACKER_BUTTON,216,284,72,14
+    PUSHBUTTON      "Set Inactive",IDC_SET_INACTIVE_TRACKER_BUTTON,367,284,
+                    72,14
+    LTEXT           "Tracker:",IDC_TRACKER_STATIC,7,270,28,8
+    PUSHBUTTON      "Set Active",IDC_SET_ACTIVE_TRACKER_BUTTON,292,284,72,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "BTTorrentGeneratorDBInterface.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "BTTorrentGeneratorDBInterface.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADD_DECOY_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        VERTGUIDE, 80
+        VERTGUIDE, 134
+        VERTGUIDE, 149
+        VERTGUIDE, 198
+        VERTGUIDE, 219
+        VERTGUIDE, 252
+        VERTGUIDE, 256
+        VERTGUIDE, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+        HORZGUIDE, 35
+        HORZGUIDE, 52
+        HORZGUIDE, 150
+        HORZGUIDE, 177
+        HORZGUIDE, 193
+        HORZGUIDE, 199
+        HORZGUIDE, 279
+        HORZGUIDE, 296
+    END
+
+    IDD_MAINFRAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_ADD_CROSSNAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        VERTGUIDE, 54
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+        HORZGUIDE, 262
+        HORZGUIDE, 280
+    END
+
+    IDD_MODIFY_STATS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        VERTGUIDE, 58
+        VERTGUIDE, 104
+        VERTGUIDE, 153
+        VERTGUIDE, 198
+        VERTGUIDE, 256
+        VERTGUIDE, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+        HORZGUIDE, 186
+        HORZGUIDE, 200
+        HORZGUIDE, 222
+        HORZGUIDE, 237
+        HORZGUIDE, 268
+    END
+
+    IDD_HASH_IDENTIFIER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        VERTGUIDE, 81
+        VERTGUIDE, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+        HORZGUIDE, 262
+        HORZGUIDE, 274
+        HORZGUIDE, 286
+    END
+
+    IDD_MODIFY_TRACKER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+        HORZGUIDE, 298
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BTTorrentGeneratorDBInterface.ico"
+IDI_FOLDER              ICON                    "res\\folder.ico"
+IDI_TORRENT             ICON                    "res\\torrent.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\BTTorrentGeneratorDBInterface.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

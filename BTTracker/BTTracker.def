@@ -1,0 +1,13 @@
+; BTTracker.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BTTracker"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI
+

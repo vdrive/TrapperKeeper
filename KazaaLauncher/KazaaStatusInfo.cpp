@@ -1,0 +1,25 @@
+// KazaaStatusInfo.cpp: implementation of the KazaaStatusInfo class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "KazaaStatusInfo.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+KazaaStatusInfo::KazaaStatusInfo()
+{
+
+	//m_process_id = 0;
+	//memcpy(m_account_name, "\0",sizeof(m_account_name));
+	m_ip = 0;
+	m_port = 0;
+
+}
+
+KazaaStatusInfo::~KazaaStatusInfo()
+{
+
+}

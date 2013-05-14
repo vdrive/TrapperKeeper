@@ -1,0 +1,3 @@
+In order to get the NameServer to work you MUST include a .dll file that for mysql. The name of the file is "libmySQL.dll". The .dll should be in the TrapperKeeper directory.
+
+Raphael

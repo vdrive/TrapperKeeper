@@ -1,0 +1,271 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\GnutellaSupply.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GnutellaSupply.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "GnutellaSupply.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GnutellaSupply_Dialog DIALOGEX 0, 0, 612, 598
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Gnutella Supply"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_Module_Connection_List,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,175,419
+    LTEXT           "0 Mods : 0 Sockets : 0 Hosts Cached",
+                    IDC_Connection_Status_Static,7,583,227,8
+    LTEXT           "Modules : ",IDC_MODULE_STATIC,7,569,32,8
+    LTEXT           "00",IDC_Min_Modules_Static,41,569,9,8
+    CONTROL         "",IDC_Min_Module_Count_Spin,"msctls_updown32",
+                    UDS_ARROWKEYS,51,567,10,14
+    LTEXT           "min",IDC_MIN_STATIC,64,569,12,8
+    LTEXT           "00",IDC_Max_Modules_Static,83,569,9,8
+    CONTROL         "",IDC_Max_Module_Count_Spin,"msctls_updown32",
+                    UDS_ARROWKEYS,94,567,10,14
+    LTEXT           "max",IDC_MAX_STATIC,107,569,14,8
+    CONTROL         "",IDC_Project_Keyword_Tree,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,186,18,175,217
+    LTEXT           "Project Keywords : ( 0 Projects )",
+                    IDC_Project_Keywords_Static,187,7,166,8
+    CONTROL         "",IDC_Supernode_Vendor_List,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,366,65,239,168
+    PUSHBUTTON      "Show &Log Window",IDC_Show_Log_Window,536,7,69,14
+    LTEXT           "Supernode Vendors as of : ?",
+                    IDC_Supernode_Vendors_Static,365,44,240,8
+    CONTROL         "",IDC_Project_Status_List,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | LVS_OWNERDATA | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,187,239,418,187
+    PUSHBUTTON      "Reset",IDC_Reset_Project_Status_List,559,427,46,14
+    LTEXT           "Demand Data Last Written Into DB at",IDC_STATIC,364,26,
+                    122,8
+    LTEXT           "?",IDC_Logfile_Demand_Data_Last_Written,489,25,116,8
+    RTEXT           "",IDC_Computer_Status_Static,349,581,256,8
+    LTEXT           "DB Cached Queries:",IDC_STATIC,364,9,65,8
+    LTEXT           "DB Cached Query Hits:",IDC_STATIC,364,18,74,8
+    LTEXT           "?",IDC_QUERIES_SIZE_STATIC,444,9,55,8
+    LTEXT           "?",IDC_QH_SIZE_STATIC,444,17,54,8
+    GROUPBOX        "Demand Process",IDC_DEMAND_GROUP,11,426,257,61,
+                    BS_CENTER
+    GROUPBOX        "Supply Process",IDC_SUPPLY_GROUP,277,426,257,60,
+                    BS_CENTER
+    CONTROL         "",IDC_DEMAND_PROGRESS,"msctls_progress32",WS_BORDER,15,
+                    447,223,14
+    CONTROL         "",IDC_SUPPLY_PROGRESS,"msctls_progress32",WS_BORDER,282,
+                    446,223,14
+    LTEXT           "Project",IDC_DEMAND_PROJECT_PROCESS_STATIC,16,434,245,8
+    LTEXT           "Project",IDC_SUPPLY_PROJECT_PROCESS_STATIC,282,434,245,
+                    8
+    LTEXT           "Last Demand Process Started at",
+                    IDC_PROCESS_STARTED_STATIC,16,464,240,8
+    LTEXT           "Last Demand Process Ended at",IDC_PROCESS_ENDED_STATIC,
+                    16,473,245,8
+    PUSHBUTTON      "Process",IDC_DATA_PROCESS_BUTTON,559,444,46,15
+    LTEXT           "0 %",IDC_DEMAND_PERCENT_STATIC,241,450,24,8
+    LTEXT           "0 %",IDC_SUPPLY_PERCENT_STATIC,508,449,24,8
+    GROUPBOX        "DB Maintenance",IDC_MAINTENANCE_GROUP_STATIC,14,490,255,
+                    75,BS_CENTER
+    LTEXT           "Last DB Maintenance Started at",
+                    IDC_MAINTENANCE_STARTED_STATIC,18,499,246,8
+    LTEXT           "Last DB Maintenance Ended at",
+                    IDC_MAINTENANCE_ENDED_STATIC,18,508,246,8
+    LTEXT           "0 records deleted from demand table",
+                    IDC_DEMAND_DELETED_STATIC,17,517,239,8
+    LTEXT           "0 records deleted from supply table",
+                    IDC_SUPPLY_DELETED_STATIC,17,526,220,8
+    LTEXT           "Supply Interval Multiplier:",IDC_SUPPLY_INTERVAL_STATIC,
+                    129,570,82,8
+    LTEXT           "00",IDC_Supply_Interval_Multiplier_Static,213,569,9,8
+    CONTROL         "",IDC_Supply_Interval_Multiplier_Spin,"msctls_updown32",
+                    UDS_ARROWKEYS,224,567,10,14
+    LTEXT           "Last Supply Process Started at",
+                    IDC_SUPPLY_PROCESS_STARTED_STATIC,283,463,243,8
+    LTEXT           "Last Supply Process Ended at",
+                    IDC_SUPPLY_PROCESS_ENDED_STATIC,283,472,244,8
+    GROUPBOX        "Reverse DNS Process",IDC_REVERSE_DNS_GROUP_STATIC,277,
+                    490,257,75,BS_CENTER
+    CONTROL         "",IDC_REVERSE_DNS_PROGRESS,"msctls_progress32",
+                    WS_BORDER,280,510,223,14
+    LTEXT           "Project",IDC_REVERSE_DNS_PROJECT_PROCESS_STATIC,280,498,
+                    245,8
+    LTEXT           "0 %",IDC_REVERSE_DNS_PERCENT_STATIC,506,513,24,8
+    LTEXT           "Last Supply Process Started at",
+                    IDC_REVERSE_DNS_PROCESS_STARTED_STATIC,281,528,243,8
+    LTEXT           "Last Supply Process Ended at",
+                    IDC_REVERSE_DNS_PROCESS_ENDED_STATIC,281,538,244,9
+    LTEXT           "Supply Data Last Written Into DB at",IDC_STATIC,364,35,
+                    116,8
+    LTEXT           "?",IDC_Logfile_Supply_Data_Last_Written,484,35,121,8
+    CONTROL         "Enable Vendor Counts",IDC_VENDOR_COUNTS_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,516,54,87,10
+    LTEXT           "Total Connected Hosts: 0",IDC_TOTAL_HOSTS_STATIC,364,54,
+                    114,8
+    LTEXT           "0 records deleted from temp hash table",
+                    IDC_DELETED_TEMP_HASH_TABLE_STATIC,17,535,247,8
+    LTEXT           "0 records deleted from hash table",
+                    IDC_DELETED_HASH_TABLE_STATIC,17,544,247,8
+    LTEXT           "0 records inserted to hash table",
+                    IDC_INSERTED_HASH_TABLE_STATIC,17,553,247,8
+END
+
+IDD_Log_Dialog DIALOGEX 0, 0, 490, 361
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Log"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_Rich_Edit,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,476,
+                    347
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GnutellaSupply_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 605
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 593
+    END
+
+    IDD_Log_Dialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\GnutellaSupply.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

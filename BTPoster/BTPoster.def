@@ -1,0 +1,12 @@
+; BTPoster.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BTPoster"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

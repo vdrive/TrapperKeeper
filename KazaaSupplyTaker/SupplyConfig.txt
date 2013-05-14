@@ -1,0 +1,8 @@
+#
+# This is the config file for the Kazaa Supply program.
+# The IP, login and password should be in each individual project file.
+# Kazaa Lite must be installed at the location you specify below:
+#
+
+<path>
+C:\Program Files\Kazaa Lite\

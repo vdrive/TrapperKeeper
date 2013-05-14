@@ -1,0 +1,26 @@
+/adler32.c/1.1/Tue Nov  1 23:35:53 2005//
+/compress.c/1.1/Tue Nov  1 23:35:53 2005//
+/crc32.c/1.1/Tue Nov  1 23:35:53 2005//
+/deflate.c/1.1/Tue Nov  1 23:35:53 2005//
+/deflate.h/1.1/Tue Nov  1 23:35:53 2005//
+/gzio.c/1.1/Tue Nov  1 23:35:53 2005//
+/infblock.c/1.1/Tue Nov  1 23:35:53 2005//
+/infblock.h/1.1/Tue Nov  1 23:35:53 2005//
+/infcodes.c/1.1/Tue Nov  1 23:35:53 2005//
+/infcodes.h/1.1/Tue Nov  1 23:35:53 2005//
+/inffast.c/1.1/Tue Nov  1 23:35:53 2005//
+/inffast.h/1.1/Tue Nov  1 23:35:53 2005//
+/inffixed.h/1.1/Tue Nov  1 23:35:53 2005//
+/inflate.c/1.1/Tue Nov  1 23:35:53 2005//
+/inftrees.c/1.1/Tue Nov  1 23:35:53 2005//
+/inftrees.h/1.1/Tue Nov  1 23:35:53 2005//
+/infutil.c/1.1/Tue Nov  1 23:35:53 2005//
+/infutil.h/1.1/Tue Nov  1 23:35:53 2005//
+/trees.c/1.1/Tue Nov  1 23:35:53 2005//
+/trees.h/1.1/Tue Nov  1 23:35:53 2005//
+/uncompr.c/1.1/Tue Nov  1 23:35:53 2005//
+/zconf.h/1.1/Tue Nov  1 23:35:53 2005//
+/zlib.h/1.1/Tue Nov  1 23:35:53 2005//
+/zutil.c/1.1/Tue Nov  1 23:35:53 2005//
+/zutil.h/1.1/Tue Nov  1 23:35:53 2005//
+D

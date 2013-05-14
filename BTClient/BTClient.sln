@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTClient", "BTClient.vcproj", "{3354E3D5-C202-4959-9BB6-10F683FC11A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTScraperDLL", "..\BTScraperDLL\BTScraperDLL.vcproj", "{93AA38B7-A54F-4A62-81C4-7D1E7397F58B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTDataCollector", "..\BTDataCollector\BTDataCollector.vcproj", "{4678AF0E-03CC-4D2B-B614-1617C73C9D68}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3354E3D5-C202-4959-9BB6-10F683FC11A0}.Debug.ActiveCfg = Debug|Win32
+		{3354E3D5-C202-4959-9BB6-10F683FC11A0}.Debug.Build.0 = Debug|Win32
+		{3354E3D5-C202-4959-9BB6-10F683FC11A0}.Release.ActiveCfg = Release|Win32
+		{3354E3D5-C202-4959-9BB6-10F683FC11A0}.Release.Build.0 = Release|Win32
+		{93AA38B7-A54F-4A62-81C4-7D1E7397F58B}.Debug.ActiveCfg = Debug|Win32
+		{93AA38B7-A54F-4A62-81C4-7D1E7397F58B}.Debug.Build.0 = Debug|Win32
+		{93AA38B7-A54F-4A62-81C4-7D1E7397F58B}.Release.ActiveCfg = Release|Win32
+		{93AA38B7-A54F-4A62-81C4-7D1E7397F58B}.Release.Build.0 = Release|Win32
+		{4678AF0E-03CC-4D2B-B614-1617C73C9D68}.Debug.ActiveCfg = Debug|Win32
+		{4678AF0E-03CC-4D2B-B614-1617C73C9D68}.Debug.Build.0 = Debug|Win32
+		{4678AF0E-03CC-4D2B-B614-1617C73C9D68}.Release.ActiveCfg = Release|Win32
+		{4678AF0E-03CC-4D2B-B614-1617C73C9D68}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTTorrentGenerator", "BTTorrentGenerator.vcproj", "{1C86F075-1593-458D-9905-D5C1C539C8EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BTTorrentGeneratorDBInterface", "BTTorrentGeneratorDBInterface\BTTorrentGeneratorDBInterface.vcproj", "{144E35F1-0424-416A-93E9-F72FD7ABB71F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1C86F075-1593-458D-9905-D5C1C539C8EE}.Debug.ActiveCfg = Debug|Win32
+		{1C86F075-1593-458D-9905-D5C1C539C8EE}.Release.ActiveCfg = Release|Win32
+		{1C86F075-1593-458D-9905-D5C1C539C8EE}.Release.Build.0 = Release|Win32
+		{144E35F1-0424-416A-93E9-F72FD7ABB71F}.Debug.ActiveCfg = Debug|Win32
+		{144E35F1-0424-416A-93E9-F72FD7ABB71F}.Debug.Build.0 = Debug|Win32
+		{144E35F1-0424-416A-93E9-F72FD7ABB71F}.Release.ActiveCfg = Release|Win32
+		{144E35F1-0424-416A-93E9-F72FD7ABB71F}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

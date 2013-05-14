@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ENTRY NAME="WATCHDOG">
+<IP>64.254.254.0-64.254.254.255</IP>
+</ENTRY>
+
+<ENTRY NAME="CELERON">
+<IP>64.220.254.254</IP>
+<IP>6.6.6.6</IP>
+<NAME>ATHLON</NAME>
+</ENTRY>
+
+<ENTRY NAME="ATHLON">
+<IP>64.60.161.0</IP>
+</ENTRY>

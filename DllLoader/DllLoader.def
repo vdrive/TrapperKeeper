@@ -1,0 +1,8 @@
+; DllLoader.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DllLoader"
+
+EXPORTS
+    ; Explicit exports can go here
+DllManagerSendData
+DllManagerReloadDlls
