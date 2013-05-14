@@ -1,0 +1,40 @@
+c:\documents and settings\all users\music
+c:\documents and settings\all users\my music
+d:\documents and settings\all users\music
+d:\documents and settings\all users\my music
+c:\program files\ares\my shared folder
+d:\program files\ares\my shared folder
+c:\morpheus\my shared folder
+c:\program files\slsk\shared
+c:\program files\slsk\muic
+c:\program files\slsk\my shared folder
+c:\program files\slsk\download
+c:\songs
+c:\music
+c:\my shared folder
+c:\media\audio
+c:\my music
+c:\shared
+c:\slsk
+c:\slsk\music
+c:\mp3
+c:\download
+c:\my downloads
+d:\morpheus\my shared folder
+d:\songs
+d:\music
+d:\my shared folder
+d:\media\audio
+d:\my music
+d:\shared
+d:\slsk
+d:\mp3
+e:\morpheus\my shared folder
+e:\songs
+e:\music
+e:\my shared folder
+e:\media\audio
+e:\my music
+e:\shared
+e:\slsk
+e:\mp3

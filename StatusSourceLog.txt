@@ -1,0 +1,9 @@
+DllInitialize() begins
+DllInitialize() ends
+DllStart() starts
+InitPerformanceCounters() begins
+AddressLength: 6
+MAC address: 00:12:3F:73:51:6F
+Network adaptor: Intel[R] PRO_100 VE Network Connection - Packet Scheduler Miniport
+InitPerformanceCounters() ends
+DllStart() ends

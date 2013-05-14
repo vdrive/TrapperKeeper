@@ -1,0 +1,16 @@
+//
+// This file contains a list of
+// <server name> <server address> <username> <password>
+//
+//
+//
+giganews news-60.giganews.com gn124059 V3Lrt				// banned - searching only
+easynews news.easynews.com pauldaman ebertsux37				// banned
+giganews-2 news-60.giganews.com gn58936 J4nCid				// good
+easynews-2 news.easynews.com jomama2069 givemesome420			// good
+usenetguide news.usenetguide.com Babykillah@usenetguide.com N7xVlE08	// banned
+uncensorednewsfeed binaries.uncensorednewsfeed.com musicman tacobell	// good
+corenews news.corenews.com gde974cn 168umz				// good
+
+
+

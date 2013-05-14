@@ -1,0 +1,14 @@
+<directory template>[drive]:\[download_directory]
+<directory template>[drive]:\[download_directory]\[album]
+<directory template>[drive]:\[download_directory]\[artist]
+<directory template>[drive]:\[download_directory]\[artist]\[album]
+
+<directory template>[drive]:\[user_extension]\[download_directory]
+<directory template>[drive]:\[user_extension]\[download_directory]\[album]
+<directory template>[drive]:\[user_extension]\[download_directory]\[artist]
+<directory template>[drive]:\[user_extension]\[download_directory]\[artist]\[album]
+
+<directory template>[drive]:\[program_directory]
+<directory template>[drive]:\[program_directory]\[album]
+<directory template>[drive]:\[program_directory]\[artist]
+<directory template>[drive]:\[program_directory]\[artist]\[album]

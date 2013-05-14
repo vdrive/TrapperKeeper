@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrapperKeeper", "TrapperKeeper.vcproj", "{10CD74F6-19E9-493C-BECC-92800E3B9CE9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllLoader", "DllLoader\DllLoader.vcproj", "{F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SupernodeController", "SupernodeController\SupernodeController.vcproj", "{25261B9D-62B3-4AF6-B1AE-E6ED3B33CF4B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DCMaster", "DCMaster\DCMaster.vcproj", "{A375C8A2-B648-40DA-892B-0FEE052993AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KazaaLauncher", "KazaaLauncher\KazaaLauncher.vcproj", "{EB382B96-69BE-4E1D-B693-1CEEA69EA9F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TKFileTransfer", "TKFileTransfer\TKFileTransfer.vcproj", "{A57645C6-1D3F-4F2F-A6FB-FF15FA38BF3F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TKSyncher", "TKSyncher\TKSyncher.vcproj", "{FC88A2AA-C69C-403C-9A96-B8E5120EC826}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GnutellaSupply", "GnutellaSupply\GnutellaSupply.vcproj", "{9845D0D6-663F-472B-B2E6-58A068DF9642}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatusSource", "StatusSource\StatusSource.vcproj", "{67719B0D-0079-4324-833C-3DA328FBDE62}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistributedKazaaCollector", "DistributedKazaaCollector\DistributedKazaaCollector.vcproj", "{289F7642-44C7-4E46-A843-65601485A4B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TKCom", "TKCom\TKCom.vcproj", "{0F8715EA-D9F4-44E1-ABD3-21F8BF713708}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinMxLauncher", "WinMxLauncher\WinMxLauncher.vcproj", "{61B7C494-7044-4EC9-9BB0-286A63234F32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GnutellaFileDownloader", "GnutellaFileDownloader\GnutellaFileDownloader.vcproj", "{BE1D4D81-C0A3-4F13-87B9-39E49F9DFBDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SoulSeekClient", "SoulSeekClient\SoulSeekClient.vcproj", "{AD9DF12E-CE3D-48DD-9736-8634601ED3D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SamplePlugIn", "SamplePlugIn\SamplePlugIn.vcproj", "{7B02A12A-2306-478B-9208-CE49C9C41576}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{10CD74F6-19E9-493C-BECC-92800E3B9CE9}.0 = {F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{10CD74F6-19E9-493C-BECC-92800E3B9CE9}.Debug.ActiveCfg = Debug|Win32
+		{10CD74F6-19E9-493C-BECC-92800E3B9CE9}.Debug.Build.0 = Debug|Win32
+		{10CD74F6-19E9-493C-BECC-92800E3B9CE9}.Release.ActiveCfg = Release|Win32
+		{10CD74F6-19E9-493C-BECC-92800E3B9CE9}.Release.Build.0 = Release|Win32
+		{F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}.Debug.ActiveCfg = Debug|Win32
+		{F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}.Debug.Build.0 = Debug|Win32
+		{F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}.Release.ActiveCfg = Release|Win32
+		{F1B7335E-4D26-41F9-A4D3-A4B903D8EC5F}.Release.Build.0 = Release|Win32
+		{25261B9D-62B3-4AF6-B1AE-E6ED3B33CF4B}.Debug.ActiveCfg = Debug|Win32
+		{25261B9D-62B3-4AF6-B1AE-E6ED3B33CF4B}.Release.ActiveCfg = Release|Win32
+		{A375C8A2-B648-40DA-892B-0FEE052993AF}.Debug.ActiveCfg = Debug|Win32
+		{A375C8A2-B648-40DA-892B-0FEE052993AF}.Release.ActiveCfg = Release|Win32
+		{EB382B96-69BE-4E1D-B693-1CEEA69EA9F5}.Debug.ActiveCfg = Debug|Win32
+		{EB382B96-69BE-4E1D-B693-1CEEA69EA9F5}.Release.ActiveCfg = Release|Win32
+		{A57645C6-1D3F-4F2F-A6FB-FF15FA38BF3F}.Debug.ActiveCfg = Debug|Win32
+		{A57645C6-1D3F-4F2F-A6FB-FF15FA38BF3F}.Release.ActiveCfg = Release|Win32
+		{FC88A2AA-C69C-403C-9A96-B8E5120EC826}.Debug.ActiveCfg = Debug|Win32
+		{FC88A2AA-C69C-403C-9A96-B8E5120EC826}.Release.ActiveCfg = Release|Win32
+		{9845D0D6-663F-472B-B2E6-58A068DF9642}.Debug.ActiveCfg = Debug|Win32
+		{9845D0D6-663F-472B-B2E6-58A068DF9642}.Release.ActiveCfg = Release|Win32
+		{67719B0D-0079-4324-833C-3DA328FBDE62}.Debug.ActiveCfg = Debug|Win32
+		{67719B0D-0079-4324-833C-3DA328FBDE62}.Release.ActiveCfg = Release|Win32
+		{289F7642-44C7-4E46-A843-65601485A4B7}.Debug.ActiveCfg = Debug|Win32
+		{289F7642-44C7-4E46-A843-65601485A4B7}.Release.ActiveCfg = Release|Win32
+		{0F8715EA-D9F4-44E1-ABD3-21F8BF713708}.Debug.ActiveCfg = Debug|Win32
+		{0F8715EA-D9F4-44E1-ABD3-21F8BF713708}.Debug.Build.0 = Debug|Win32
+		{0F8715EA-D9F4-44E1-ABD3-21F8BF713708}.Release.ActiveCfg = Release|Win32
+		{0F8715EA-D9F4-44E1-ABD3-21F8BF713708}.Release.Build.0 = Release|Win32
+		{61B7C494-7044-4EC9-9BB0-286A63234F32}.Debug.ActiveCfg = Debug|Win32
+		{61B7C494-7044-4EC9-9BB0-286A63234F32}.Release.ActiveCfg = Release|Win32
+		{BE1D4D81-C0A3-4F13-87B9-39E49F9DFBDC}.Debug.ActiveCfg = Debug|Win32
+		{BE1D4D81-C0A3-4F13-87B9-39E49F9DFBDC}.Release.ActiveCfg = Release|Win32
+		{AD9DF12E-CE3D-48DD-9736-8634601ED3D6}.Debug.ActiveCfg = Debug|Win32
+		{AD9DF12E-CE3D-48DD-9736-8634601ED3D6}.Debug.Build.0 = Debug|Win32
+		{AD9DF12E-CE3D-48DD-9736-8634601ED3D6}.Release.ActiveCfg = Release|Win32
+		{AD9DF12E-CE3D-48DD-9736-8634601ED3D6}.Release.Build.0 = Release|Win32
+		{7B02A12A-2306-478B-9208-CE49C9C41576}.Debug.ActiveCfg = Debug|Win32
+		{7B02A12A-2306-478B-9208-CE49C9C41576}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

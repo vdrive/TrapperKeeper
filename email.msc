@@ -1,0 +1,10 @@
+helo
+MAIL FROM:<usenet@onsystems.com>
+RCPT TO:<paul@onsystems.com>
+RCPT TO:<pauljferguson@hotmail.com>
+data
+Subject: USENET NOTIFICATION
+From:  <usenet_protection@onsystems.com>
+To:  <the-skamp-master@onsystems.com>
+.
+quit
