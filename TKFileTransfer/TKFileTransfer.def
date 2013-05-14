@@ -1,0 +1,12 @@
+; TKFileTransfer.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TKFileTransfer"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

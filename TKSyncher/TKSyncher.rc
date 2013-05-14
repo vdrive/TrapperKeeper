@@ -1,0 +1,259 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\TKSyncher.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TKSyncher.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "TKSyncher.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SYNCHERDIALOG DIALOGEX 0, 0, 389, 310
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Syncher Status and Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SOURCELIST,7,72,165,65,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "No Source Selected",IDC_SOURCE,257,62,111,8
+    PUSHBUTTON      "Refresh",IDC_REFRESH,7,54,46,13
+    LTEXT           "Sources (c:\\syncher\\src\\<src name>)",IDC_STATIC,9,41,
+                    157,9
+    LTEXT           "Clients For Source:",IDC_STATIC,181,62,61,8
+    PUSHBUTTON      "Delete My Synched Files And Redownload On Next Update",
+                    IDC_RESYNCHALL,75,173,244,14
+    GROUPBOX        "SOURCE Controls (File Senders)  These controls only apply if you are at the source",
+                    IDC_STATIC,0,0,387,160
+    GROUPBOX        "DESTINATION controls  These controls only work if this trapperkeeper is a synching destination.",
+                    IDC_STATIC,2,163,386,147
+    PUSHBUTTON      "Rescan Directories, Then Tell Clients To Update Now",
+                    IDC_RESCANSOURCES,7,17,177,16
+    COMBOBOX        IDC_SOURCEDESTINATION,181,73,176,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_BORDER | WS_TABSTOP,3,205,383,103
+    LTEXT           "Status",IDC_STATIC,7,193,27,8
+    PUSHBUTTON      "Refresh",IDC_BUTTON1,44,189,113,15
+    PUSHBUTTON      "Purge Source From IP Range",IDC_PURGESOURCEFROMIPRANGE,
+                    190,17,106,16
+    PUSHBUTTON      "Load Balancer",IDC_LOADBALANCER,302,17,78,16
+END
+
+IDD_NEWSOURCE DIALOGEX 0, 0, 284, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Source Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,227,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,227,24,50,14
+    EDITTEXT        IDC_SOURCE_NAME,7,18,169,14,ES_AUTOHSCROLL
+    LTEXT           "Source Name",IDC_STATIC,7,7,133,9
+END
+
+IDD_DELETE_SOURCE_DIALOG DIALOGEX 0, 0, 213, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Purge Source"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPSTART,"SysIPAddress32",WS_TABSTOP,42,35,104,12
+    CONTROL         "",IDC_IPEND,"SysIPAddress32",WS_TABSTOP,42,50,104,12
+    LTEXT           "Start",IDC_STATIC,17,36,17,10
+    LTEXT           "End",IDC_STATIC,17,50,17,10
+    GROUPBOX        "IP Range",IDC_STATIC,7,21,148,46
+    EDITTEXT        IDC_SOURCE_NAME,48,5,106,12,ES_AUTOHSCROLL
+    LTEXT           "Source Name",IDC_STATIC,2,6,42,10
+    PUSHBUTTON      "Purge",IDC_Purge,161,2,44,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,161,16,44,14
+    PUSHBUTTON      "Secure Total Annihilation",IDC_TOTAL_ANNIHILATION,161,
+                    31,44,27,BS_MULTILINE
+    PUSHBUTTON      "Clean Directory",IDC_CLEAN_DIRECTORY,157,61,56,13
+    PUSHBUTTON      "Delete File",IDC_DELETE_FILE,157,76,56,13
+    PUSHBUTTON      "Run",IDC_RUN_PROGRAM,157,91,56,13
+END
+
+IDD_LOADBALANCERDIALOG DIALOGEX 0, 0, 575, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Load Balancing System"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROJECTINFO,"SysTreeView32",TVS_HASBUTTONS | 
+                    WS_BORDER | WS_TABSTOP,1,30,283,181
+    CONTROL         "",IDC_RACKINFO,"SysTreeView32",TVS_HASBUTTONS | 
+                    WS_BORDER | WS_TABSTOP,291,31,283,263
+    LTEXT           "Project Info",IDC_STATIC,2,20,180,8
+    LTEXT           "Rack Info",IDC_STATIC,293,21,194,8
+    PUSHBUTTON      "Refresh Data",IDC_REFRESHDATA,2,1,107,15
+    LTEXT           "Desired Rack Load:",IDC_STATIC,130,4,62,10
+    LTEXT           "Actual Rack Load:",IDC_STATIC,293,4,58,10
+    LTEXT           "N/A",IDC_ACTUAL_RACK_LOAD,358,4,101,10
+    LTEXT           "N/A",IDC_DESIRED_RACK_LOAD,199,4,87,10
+    LTEXT           "Unassigned Projects",IDC_STATIC,1,220,133,8
+    LISTBOX         IDC_UNASSIGNEDPROJECTS,1,230,283,63,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SYNCHERDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_NEWSOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DELETE_SOURCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_LOADBALANCERDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 568
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\TKSyncher.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

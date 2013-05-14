@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UsenetSearcher", "UsenetSearcher.vcproj", "{60D9AFCD-82C9-4711-9469-D97A959E9655}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UsenetPoster", "..\UsenetPoster\UsenetPoster.vcproj", "{E7F05B0A-EB24-4A78-9D31-F49A2A92F454}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{60D9AFCD-82C9-4711-9469-D97A959E9655}.Debug.ActiveCfg = Debug|Win32
+		{60D9AFCD-82C9-4711-9469-D97A959E9655}.Debug.Build.0 = Debug|Win32
+		{60D9AFCD-82C9-4711-9469-D97A959E9655}.Release.ActiveCfg = Release|Win32
+		{60D9AFCD-82C9-4711-9469-D97A959E9655}.Release.Build.0 = Release|Win32
+		{E7F05B0A-EB24-4A78-9D31-F49A2A92F454}.Debug.ActiveCfg = Debug|Win32
+		{E7F05B0A-EB24-4A78-9D31-F49A2A92F454}.Debug.Build.0 = Debug|Win32
+		{E7F05B0A-EB24-4A78-9D31-F49A2A92F454}.Release.ActiveCfg = Release|Win32
+		{E7F05B0A-EB24-4A78-9D31-F49A2A92F454}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
