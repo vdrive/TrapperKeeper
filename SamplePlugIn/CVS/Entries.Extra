@@ -1,0 +1,17 @@
+/Dll.cpp////
+/Dll.h////
+/DllInterface.cpp////
+/DllInterface.h////
+/Interface.cpp////
+/Interface.h////
+/SamplePlugIn.cpp////
+/SamplePlugIn.def////
+/SamplePlugIn.rc////
+/SamplePlugIn.vcproj////
+/SamplePlugInDlg.cpp////
+/SamplePlugInDlg.h////
+/SamplePlugInDll.cpp////
+/SamplePlugInDll.h////
+/resource.h////
+/stdafx.cpp////
+/stdafx.h////

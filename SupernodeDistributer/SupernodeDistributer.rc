@@ -1,0 +1,218 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SupernodeDistributer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Kazaa Controller Dll"
+            VALUE "CompanyName", "Media Defender, Inc."
+            VALUE "FileDescription", "Kazaa Controller Dll"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "KazaaController.dll"
+            VALUE "LegalCopyright", "© 2003 Media Defender, Inc.  All rights reserved."
+            VALUE "OriginalFilename", "KazaaController.dll"
+            VALUE "ProductName", "Kazaa Controller"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SUPERNODE_DISTRIBUTER_DIALOG DIALOGEX 0, 0, 436, 375
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Supernode Distributer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,60,422,208
+    LTEXT           "Reconnect Kazaa every",IDC_STATIC,10,4,77,8
+    LTEXT           "0",IDC_LAUNCHING_INTERVAL,91,4,8,8
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,104,0,10,14
+    LTEXT           "sec",IDC_STATIC,122,4,12,8
+    PUSHBUTTON      "Stop Gathering",IDC_STOP_BUTTON,7,21,63,14
+    PUSHBUTTON      "Disable Probing",IDC_DISABLE_BUTTON,291,20,63,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Save IP List",IDC_SAVE_IP_BUTTON,148,21,63,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Load IP List",IDC_LOAD_IP_BUTTON2,219,21,63,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Save User Names",IDC_SAVE_USERNAME_BUTTON,77,21,63,14
+    LTEXT           "Number of Supernodes: 0",IDC_NUM_SUPERNODES,7,44,119,8
+    LTEXT           "Number of Supernodes Alive: 0",IDC_NUM_SUPERNODES_ALIVE,
+                    305,4,124,8,NOT WS_VISIBLE
+    LTEXT           "Connections: 0",IDC_PROBING_INDEX,132,44,79,8
+    LTEXT           "Queue Size: 0",IDC_QUEUE_SIZE,249,44,112,8
+    LISTBOX         IDC_SHARE_FOLDER_LIST,7,282,422,50,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_SHARE_FOLDER_EDIT,7,354,190,14,ES_AUTOHSCROLL
+    LTEXT           "Share Folder",IDC_SHARE_FOLDER_STATIC,8,273,42,8
+    DEFPUSHBUTTON   "Add",IDC_ADD_FOLDER_BUTTON,201,354,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE_BUTTON,255,354,50,14
+    LTEXT           "Reset all supernodes every",IDC_RESET_SUPERNODES_STATIC,
+                    7,338,88,8
+    EDITTEXT        IDC_HOURS_EDIT,97,335,40,14,ES_AUTOHSCROLL
+    LTEXT           "hour(s)",IDC_HOURS_STATIC,143,338,24,8
+    PUSHBUTTON      "Apply",IDC_APPLY_BUTTON,174,335,50,14
+    LTEXT           " Note: 0 means no resetting",IDC_STATIC,229,339,90,8
+END
+
+IDD_RACK_SUPERNODE_PAGE DIALOGEX 0, 0, 435, 342
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Racks' Supernodes"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_RACK_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,7,23,198,312
+    CONTROL         "",IDC_SUPERNODE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,214,23,214,312
+    LTEXT           "Number of Racks: 0",IDC_RACKS_NUM,7,14,200,8
+    LTEXT           "Number of Supernodes: 0",IDC_SUPERNODE_NUM,323,14,99,8
+    LTEXT           "Number of Kazaa: 0",IDC_KAZAA_NUM,213,14,101,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SUPERNODE_DISTRIBUTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        BOTTOMMARGIN, 368
+    END
+
+    IDD_RACK_SUPERNODE_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_KAZAA_ICON          ICON                    "res\\kazaa.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SupernodeDistributer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

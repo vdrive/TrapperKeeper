@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "P2PFileIndexer", "P2PFileIndexer.vcproj", "{EC3D9280-0194-4B79-9359-F0C3D7AC5887}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EC3D9280-0194-4B79-9359-F0C3D7AC5887}.Debug.ActiveCfg = Debug|Win32
+		{EC3D9280-0194-4B79-9359-F0C3D7AC5887}.Debug.Build.0 = Debug|Win32
+		{EC3D9280-0194-4B79-9359-F0C3D7AC5887}.Release.ActiveCfg = Release|Win32
+		{EC3D9280-0194-4B79-9359-F0C3D7AC5887}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

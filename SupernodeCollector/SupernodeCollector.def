@@ -1,0 +1,12 @@
+; SupernodeCollector.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SupernodeCollector"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

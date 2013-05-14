@@ -1,0 +1,221 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SupernodeController.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SupernodeController.dll"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SupernodeController.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 466, 372
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Supernode Controller"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LOG_LIST,7,7,452,249,LBS_HASSTRINGS | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Total Collectors: 0",IDC_TOTAL_COLLECTORS_STATIC,12,272,
+                    121,8
+    GROUPBOX        "Collectors Status",IDC_STATIC,8,264,149,84,BS_CENTER
+    LTEXT           "Supernodes Collected (main): 0",
+                    IDC_SUPERNODES_COLLECTED_STATIC,12,295,122,8
+    GROUPBOX        "Launcher Status",IDC_STATIC,161,264,130,84,BS_CENTER
+    LTEXT           "Number of Launcher: 0",IDC_NUM_LAUNCHER_STATIC,165,275,
+                    117,8
+    LTEXT           "Supernodes Assigned (main) : 0",
+                    IDC_SUPERNODES_USED_STATIC,12,307,125,8
+    LTEXT           "Collectors are Up: 0",IDC_COLLECTORS_UP_STATIC,12,283,
+                    123,8
+    PUSHBUTTON      "Send Init Msg to All",IDC_SEND_INIT_BUTTON,7,351,77,14
+    PUSHBUTTON      "Rack Status",IDC_RACK_STATUS_BUTTON,409,351,50,14
+    PUSHBUTTON      "Max Hash",IDC_IS_SORTED_BUTTON,91,351,50,14
+    LTEXT           "Total Supernodes: 0",IDC_TOTAL_SUPERNODES_STATIC,165,
+                    287,118,8
+    GROUPBOX        "Controller Messages",IDC_STATIC,295,264,157,83,
+                    BS_CENTER
+    LTEXT           "Remote Supernode List: 0",
+                    IDC_REMOTE_SUPERNODE_LIST_STATIC,302,273,145,8
+    LTEXT           "Check New Supernode: 0",IDC_CHECK_NEW_SUPERNODE_STATIC,
+                    301,285,140,8
+    LTEXT           "Request New Supernode: 0",
+                    IDC_REQUEST_NEW_SUPERNODE_STATIC,301,321,142,8
+    LTEXT           "Remove Supernode: 0",IDC_REMOVE_SUPERNODE_STATIC,301,
+                    333,148,8
+    LTEXT           "Supernode Taken: 0",IDC_SUPERNODE_TAKEN_STATIC,301,297,
+                    144,8
+    LTEXT           "Duplicated Supernode: 0",
+                    IDC_DUPLICATED_SUPERNODE_STATIC,301,309,139,8
+    LTEXT           "Max Duplicated Supernode Assigned: 0",
+                    IDC_MAX_DUPLICATED_ASSIGNED_STATIC,12,320,144,8
+    LTEXT           "Supernodes Removed: 0",IDC_SUPERNODE_REMOVED_STATIC,12,
+                    332,139,8
+    PUSHBUTTON      "RESET",IDC_RESET_BUTTON,149,351,50,14
+    PUSHBUTTON      "Save Supernodes",IDC_SAVE_SUPERNODES_BUTTON,348,351,59,
+                    14
+    PUSHBUTTON      "Reset Shared Folders",IDC_RESET_SHARED_FOLDERS_BUTTON,
+                    203,351,80,14
+END
+
+IDD_RACK_STATUS_DIALOG DIALOGEX 0, 0, 436, 342
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Rack Status"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RACK_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,23,198,312
+    CONTROL         "",IDC_SUPERNODE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,214,23,214,312
+    LTEXT           "Number of Racks: 0",IDC_RACKS_NUM,7,14,200,8
+    LTEXT           "Number of Supernodes: 0",IDC_SUPERNODE_NUM,323,14,99,8
+    LTEXT           "Number of Kazaa: 0",IDC_KAZAA_NUM,213,14,101,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 365
+    END
+
+    IDD_RACK_STATUS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SupernodeController.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

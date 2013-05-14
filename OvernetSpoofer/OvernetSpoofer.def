@@ -1,0 +1,13 @@
+; OvernetSpoofer.def : Declares the module parameters for the DLL.
+
+LIBRARY      "OvernetSpoofer"
+
+EXPORTS
+; Explicit exports can go here
+; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

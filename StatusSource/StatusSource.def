@@ -1,0 +1,12 @@
+; StatusSource.def : Declares the module parameters for the DLL.
+
+LIBRARY      "StatusSource"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

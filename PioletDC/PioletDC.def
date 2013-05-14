@@ -1,0 +1,12 @@
+; PioletDC.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PioletDC"
+
+EXPORTS
+    ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI

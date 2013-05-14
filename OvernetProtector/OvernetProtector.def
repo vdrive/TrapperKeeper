@@ -1,0 +1,13 @@
+; OvernetProtector.def : Declares the module parameters for the DLL.
+
+LIBRARY      "OvernetProtector"
+
+EXPORTS
+    ; Explicit exports can go here
+   ; Explicit exports can go here
+InitDll
+UnInitialize
+GetAppID
+ReceivedData
+Start
+ShowGUI
